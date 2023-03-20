@@ -13,5 +13,58 @@ body {
 
 .wrapper {
   height: 100%;
-  margin:  auto;
+  margin: auto;
+  padding: 0 16px;
+
+  &--subtitle {
+    margin-top: 55px;
+    margin-bottom: 29px;
+
+    text-align: center;
+
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 150%;
+  }
+  
+  @media (min-width:500px){
+    padding: 0 101px;
+  }
+  //@media (min-width:1020px){
+  //  height: 249px;
+  //}
+}
+
+.textBlock {
+  margin-top: 36px;
+  margin-bottom: 36px;
+
+  p {
+    margin:0 0 7px 0 ;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+
+  }
+}
+
+.requisites {
+
+  &--title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+
+    margin: 0;
+  }
+
+  &--text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    margin: 0;
+  }
 }

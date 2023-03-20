@@ -1,19 +1,84 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=PT+Sans&display=swap");
 header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 header p {
-  font-family: "Open Sans", sans-serif;
+  margin: 0 0 13px 0;
   font-weight: 600;
   font-size: 26px;
   line-height: 35px;
+  text-align: center;
+  text-transform: uppercase;
 }
-
-article {
+header article {
   display: flex;
   justify-content: center;
   margin: auto;
+  width: 80%;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.stepBlock {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.stepBlock .stepContainer {
+  width: 100%;
+  min-width: 343px;
+  max-width: 407px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: white;
+  border: 1px solid #DADADA;
+  border-radius: 6px;
+}
+.stepBlock .stepContainer--title {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+  color: #A90003;
+}
+.stepBlock .stepContainer p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.documentsBlock {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.documentsBlock .documentContainer {
+  margin-bottom: 20px;
+  background: #CCCCCC;
+  border-radius: 6px;
+}
+.documentsBlock .documentContainer--check1 {
+  width: 344px;
+  height: 268px;
+}
+.documentsBlock .documentContainer--check2 {
+  width: 343px;
+  height: 416px;
+}
+.documentsBlock .documentContainer--talon {
+  width: 343px;
+  height: 199px;
+}
+.documentsBlock .documentContainer--faktura {
+  width: 343px;
+  height: 457px;
 }
 
 body {
@@ -26,6 +91,45 @@ body {
 .wrapper {
   height: 100%;
   margin: auto;
+  padding: 0 16px;
+}
+.wrapper--subtitle {
+  margin-top: 55px;
+  margin-bottom: 29px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 150%;
+}
+@media (min-width: 500px) {
+  .wrapper {
+    padding: 0 101px;
+  }
+}
+
+.textBlock {
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+.textBlock p {
+  margin: 0 0 7px 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.requisites--title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0;
+}
+.requisites--text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
 }
 
 /*# sourceMappingURL=app.css.map */

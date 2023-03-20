@@ -1,0 +1,45 @@
+.stepBlock {
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .stepContainer {
+    width: 100%;
+
+    min-width: 343px;
+    max-width: 407px;
+
+    margin-bottom: 20px;
+
+    padding: 20px;
+    box-sizing: border-box;
+
+    background-color: white;
+
+    border: 1px solid #DADADA;
+    border-radius: 6px;
+
+    &--title {
+      margin-bottom: 10px;
+
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 30px;
+
+      color: #A90003;
+    }
+
+    p {
+      margin: 0;
+
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+    }
+  }
+}
+
+
+

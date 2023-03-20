@@ -1,0 +1,30 @@
+.documentsBlock {
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .documentContainer {
+    margin-bottom: 20px;
+
+    background: #CCCCCC;
+    border-radius: 6px;
+
+    &--check1 {
+      width: 344px;
+      height: 268px;
+    }
+    &--check2 {
+      width: 343px;
+      height: 416px;
+    }
+    &--talon {
+      width: 343px;
+      height: 199px;
+    }
+    &--faktura {
+      width: 343px;
+      height: 457px;
+    }
+  }
+}
