@@ -56,13 +56,19 @@ header article {
 
 .documentsBlock {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
+  margin: auto;
+  max-width: 800px;
 }
 .documentsBlock .documentContainer {
   margin-bottom: 20px;
   background: #CCCCCC;
   border-radius: 6px;
+}
+.documentsBlock .documentContainer div {
+  display: flex;
+  flex-direction: column;
 }
 .documentsBlock .documentContainer--check1 {
   width: 344px;
@@ -79,6 +85,24 @@ header article {
 .documentsBlock .documentContainer--faktura {
   width: 343px;
   height: 457px;
+}
+@media (min-width: 888px) {
+  .documentsBlock .documentContainer--check1 {
+    width: 254px;
+    height: 198px;
+  }
+  .documentsBlock .documentContainer--check2 {
+    width: 254px;
+    height: 308px;
+  }
+  .documentsBlock .documentContainer--talon {
+    width: 254px;
+    height: 147px;
+  }
+  .documentsBlock .documentContainer--faktura {
+    width: 523px;
+    height: 697px;
+  }
 }
 
 body {

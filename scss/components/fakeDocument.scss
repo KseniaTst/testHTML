@@ -1,14 +1,22 @@
 .documentsBlock {
-
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
+
+  margin: auto;
+
+  max-width: 800px;
 
   .documentContainer {
     margin-bottom: 20px;
 
     background: #CCCCCC;
     border-radius: 6px;
+
+    div {
+      display: flex;
+      flex-direction: column;
+    }
 
     &--check1 {
       width: 344px;
@@ -25,6 +33,24 @@
     &--faktura {
       width: 343px;
       height: 457px;
+    }
+    @media (min-width:888px){
+      &--check1 {
+        width: 254px;
+        height: 198px;
+      }
+      &--check2 {
+        width: 254px;
+        height: 308px;
+      }
+      &--talon {
+        width: 254px;
+        height: 147px;
+      }
+      &--faktura {
+        width: 523px;
+        height: 697px;
+      }
     }
   }
 }
