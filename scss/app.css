@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=PT+Sans&display=swap");
+header {
+  display: flex;
+  justify-content: center;
+}
+header p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 35px;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+body {
+  background-color: #F3F3F3;
+  padding-top: 80px;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.wrapper {
+  height: 100%;
+  margin: auto;
+}
+
+/*# sourceMappingURL=app.css.map */
