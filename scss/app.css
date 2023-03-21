@@ -23,13 +23,13 @@ header article {
   line-height: 22px;
 }
 
-.stepBlock {
+.step-block {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.stepBlock .stepContainer {
+.step-block .step-container {
   width: 100%;
   min-width: 343px;
   max-width: 407px;
@@ -40,66 +40,66 @@ header article {
   border: 1px solid #DADADA;
   border-radius: 6px;
 }
-.stepBlock .stepContainer--title {
+.step-block .step-container--title {
   margin-bottom: 10px;
   font-weight: 600;
   font-size: 22px;
   line-height: 30px;
   color: #A90003;
 }
-.stepBlock .stepContainer p {
+.step-block .step-container p {
   margin: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
 }
 
-.documentsBlock {
+.documents-block {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   margin: auto;
   max-width: 800px;
 }
-.documentsBlock .documentContainer {
+.documents-block .document-container {
   margin-bottom: 20px;
   background: #CCCCCC;
   border-radius: 6px;
 }
-.documentsBlock .documentContainer div {
+.documents-block .document-container div {
   display: flex;
   flex-direction: column;
 }
-.documentsBlock .documentContainer--check1 {
+.documents-block .document-container--check1 {
   width: 344px;
   height: 268px;
 }
-.documentsBlock .documentContainer--check2 {
+.documents-block .document-container--check2 {
   width: 343px;
   height: 416px;
 }
-.documentsBlock .documentContainer--talon {
+.documents-block .document-container--talon {
   width: 343px;
   height: 199px;
 }
-.documentsBlock .documentContainer--faktura {
+.documents-block .document-container--faktura {
   width: 343px;
   height: 457px;
 }
 @media (min-width: 888px) {
-  .documentsBlock .documentContainer--check1 {
+  .documents-block .document-container--check1 {
     width: 254px;
     height: 198px;
   }
-  .documentsBlock .documentContainer--check2 {
+  .documents-block .document-container--check2 {
     width: 254px;
     height: 308px;
   }
-  .documentsBlock .documentContainer--talon {
+  .documents-block .document-container--talon {
     width: 254px;
     height: 147px;
   }
-  .documentsBlock .documentContainer--faktura {
+  .documents-block .document-container--faktura {
     width: 523px;
     height: 697px;
   }
@@ -131,15 +131,17 @@ body {
   }
 }
 
-.textBlock {
+.text-block {
   margin-top: 36px;
   margin-bottom: 36px;
 }
-.textBlock p {
+.text-block p {
   margin: 0 0 7px 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
+  text-indent: -20px;
+  padding-left: 20px;
 }
 
 .requisites--title {

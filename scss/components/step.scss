@@ -1,11 +1,13 @@
-.stepBlock {
+@import "../variables";
+
+.step-block {
   width: 100%;
 
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 
-  .stepContainer {
+  .step-container {
     width: 100%;
 
     min-width: 343px;
@@ -28,7 +30,7 @@
       font-size: 22px;
       line-height: 30px;
 
-      color: #A90003;
+      color: $secondary-color;
     }
 
     p {
