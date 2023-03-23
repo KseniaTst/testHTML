@@ -1,4 +1,5 @@
 @import "../variables";
+@import "../mixins";
 
 .step-block {
   width: 100%;
@@ -26,9 +27,7 @@
     &--title {
       margin-bottom: 10px;
 
-      font-weight: 600;
-      font-size: 22px;
-      line-height: 30px;
+      @include text(22px, 600, 30px);
 
       color: $secondary-color;
     }
@@ -36,9 +35,16 @@
     p {
       margin: 0;
 
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 150%;
+      @include text(16px, 400, 27px);
+    }
+
+    @media (min-width:500px){
+       &--title {
+         @include text(26px, 600, 35px);
+       }
+      p {
+        @include text(18px, 400, 27px);
+      }
     }
   }
 }

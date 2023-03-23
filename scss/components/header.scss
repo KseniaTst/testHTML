@@ -1,3 +1,4 @@
+@import '../mixins';
 
 header {
   display: flex;
@@ -6,11 +7,9 @@ header {
 
 
   p {
-    margin:0 0 13px 0 ;
+    margin: 0 0 13px 0;
 
-    font-weight: 600;
-    font-size: 26px;
-    line-height: 35px;
+    @include text(26px, 600, 35px);
 
     text-align: center;
 
@@ -26,8 +25,16 @@ header {
 
     text-align: center;
 
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
+    @include text(16px, 400, 22px);
+  }
+
+  @media (min-width: 500px) {
+
+    p {
+      @include text(30px, 600, 41px);
+    }
+    article {
+      @include text(18px, 400, 36px);
+    }
   }
 }
