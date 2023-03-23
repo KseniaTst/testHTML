@@ -26,14 +26,6 @@ body {
 
     @include text(22px, 600, 33px);
   }
-  
-  @media (min-width:500px){
-    padding: 0 101px;
-
-    &--subtitle {
-      @include text(24px, 600, 48px);
-    }
-  }
 }
 
 .text-block {
@@ -47,10 +39,6 @@ body {
 
     text-indent: -20px;
     padding-left: 20px;
-
-    @media (min-width:500px){
-      @include text(18px, 400, 36px);
-    }
   }
 }
 
@@ -70,13 +58,25 @@ body {
 
     margin: 0;
   }
+}
 
-  @media (min-width:500px){
+@media (min-width: 500px) {
+  .wrapper {
+    padding: 0 101px;
 
+    &--subtitle {
+      @include text(24px, 600, 48px);
+    }
+  }
+  .text-block {
+    p {
+      @include text(18px, 400, 36px);
+    }
+  }
+  .requisites {
     &--title, &--text {
       font-size: 18px;
       line-height: 27px;
     }
   }
-
 }
